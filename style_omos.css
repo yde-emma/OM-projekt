@@ -1,0 +1,161 @@
+/* ----- CSS RESET ----- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---- Her starter min styling ----- */
+
+/* ----- HEADER ----- */
+header {
+    background-color:lightgray; /* Baggrundsfarve for headeren */
+    color:rgb(21, 39, 114); /* Tekstfarve for menuen */
+	height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+	border-bottom: 3px solid darkorange;
+}
+
+.logo {
+    text-align: left; /* Venstrecentrer logo */
+	margin-left: 1.5%;
+	max-width: 150px;
+}
+
+.logo img {
+    max-height: 150px; 
+}
+
+/* Links i menuen */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav li {
+	margin-right: 135px;
+
+}
+nav a {
+    text-decoration:solid;
+    color:rgb(21, 39, 114);
+	font-size: 22px;
+	font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline darkorange;
+}
+
+
+/* ------ HER STARTER MIT INDHOLD ----- */
+.tekst{
+	font-size: 50px;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(21, 39, 114);
+	text-align: center;
+	margin-top: 12%;
+	margin-bottom: 12%;
+}
+
+/* ----- FOOTER STARTER HER ----- */
+
+footer {
+	display: flex;
+	flex-direction: row;
+    height: 125px;
+    background-color: lightgray;
+    color:rgb(21, 39, 114); 
+    padding: 20px;
+    border-top: 3px solid darkorange;
+    justify-content: space-around;
+	align-content: end;
+	align-items: center;
+}
+
+.footer-overskrift{
+	font-size: 20px;
+	color: rgb(21, 39, 114);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.footer-item {
+	padding: 2px;
+    font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-row{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.links{
+	color: rgb(21, 39, 114);
+	text-decoration: none;
+	color: inherit;
+}
+
+#fb_ikon{
+	max-width: 20%;
+	margin-left: -65%;
+}
+
+#ig_ikon{
+	max-width: 20%;
+	margin-right: -65%;
+}
+

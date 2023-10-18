@@ -1,0 +1,343 @@
+/* ----- CSS RESET ----- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---- Her starter min styling ----- */
+/* Generel styling af siden */
+.main{
+	background: linear-gradient(to bottom, lightgray, #70a2f9, lightgray); /* Gradient background */
+    padding: 20px;
+    max-width:100%;
+    text-align: center;
+}
+
+.brødtekst{
+	font-size: 20px;
+	color:rgb(21, 39, 114);
+	line-height: 150%;
+	text-align: center;
+}
+
+.brydelinje{
+	font-size: 35px;
+	font-weight: bold;
+	color: darkorange;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color:lightgray; /* Baggrundsfarve for headeren */
+    color:rgb(9, 21, 70); /* Tekstfarve for menuen */
+	height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+	border-bottom: 3px solid darkorange;
+}
+
+.logo {
+    text-align: left; /* Venstrecentrer logo */
+	margin-left: 1.5%;
+	max-width: 150px;
+}
+
+.logo img {
+    max-height: 150px; 
+}
+
+/* Links i menuen */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav li {
+	margin-right: 135px;
+
+}
+nav a {
+    text-decoration:solid;
+    color:rgb(21, 39, 114);
+	font-size: 22px;
+	font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline darkorange;
+}
+
+/* --- INTRODUKTION --- */
+#titel_artikel{
+	font-size: 48px;
+	font-weight: bold;
+	color:rgb(21, 39, 114);
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+
+.billede_flaske{
+	max-width: 55%;
+	margin-bottom: 2%;
+}
+
+.forord{
+	font-size: 22px;
+	color:rgb(21, 39, 114) ;
+	text-align: center;
+	margin-left: 24%;
+	margin-right: 24%;
+	margin-bottom: 2%;
+	line-height: 150%;
+}
+
+.underoverskrift{
+	font-size: 32px;
+	font-weight: bold;
+	color: rgb(208, 117, 5);
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+/* ---- TEKSTBOKS - FLEXBOX ----*/
+
+.tekstboks-container {
+    display: flex;
+	flex-direction: column;
+    justify-content: left;
+}
+
+.tekst-boks {
+    flex: 1; 
+    max-width: 45%; 
+    border: 6px solid rgb(208, 117, 5);
+	border-radius: 5px;
+    padding: 1%;
+    margin: 4%;
+	background-color: lightgray;
+}
+
+.tekstboks-content {
+    text-align: center;
+}
+
+.overskrift-tekstboks {
+    font-size: 28px;
+	font-weight: bold;
+	color: rgb(21, 39, 114);
+	margin: 5%;
+}
+
+.små_underoverskrifter{
+	font-size: 20px;
+	font-weight: bold;
+	color:rgb(208, 117, 5) ;
+	line-height: 150%;
+	text-align:center;
+	margin-left: 5%;
+	margin-bottom: 2%;
+}
+
+.tekst_tekstboks{
+	margin-bottom: 5%;
+	font-size: 20px;
+	color:rgb(21, 39, 114);
+	line-height: 150%;
+	text-align: center;
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+/* --- ILLUSTRATION - SMARTPHONE --- */
+#illustration_tilbudsavis{
+	max-width: 70%;
+	position: absolute;
+	top: 188%;
+	right: -12%;
+}
+
+/* --- MADPLAN - TEKST */
+#tekst_del1{
+	margin-left: 16%;
+	margin-right: 16%;
+}
+
+/* --- BILLEDER - FLEXBOX --- */
+.image-flex-container {
+	display: flex;
+	justify-content: space-between; 
+	align-items: center;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+  }
+  
+  .image-box img {
+	max-width: 70%;
+  }
+
+
+/* --- HOW TO MADPLAN - TEKSTBOKS - FLEXBOX --- */
+.madplan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.madplan-boks {
+    flex: 1; 
+    max-width: 70%; 
+    border: 6px dotted rgb(208, 117, 5);
+	border-radius: 5px;
+    padding: 1%;
+    margin: 4%;
+	background-color: rgba(211, 211, 211, 0.6);
+}
+
+.madplan-content {
+    text-align: center;
+}
+
+.overskrift-tekstboks {
+    font-size: 30px;
+	font-weight: bold;
+	color: rgb(208, 117, 5);
+	margin: 5%;
+}
+
+.underoverskrift_madplan{
+	font-size: 24px;
+	color:rgb(21, 39, 114);
+	font-weight: bold;
+	margin-bottom: 2%;
+	margin-top: 5%;
+}
+
+.madplan_tekst{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+}
+
+/* ---- AFSLUTNING ---- */
+.afslutning_tekst{
+	font-size: 22px;
+	color:rgb(21, 39, 114) ;
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 2%;
+}
+
+.slut{
+	font-size: 22px;
+	font-weight: bold;
+	color:rgb(21, 39, 114) ;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 3%;
+}
+
+
+/* ----- FOOTER STARTER HER ----- */
+
+footer {
+	display: flex;
+	flex-direction: row;
+    height: 125px;
+    background-color: lightgray; 
+    color:rgb(21, 39, 114); 
+    padding: 20px;
+    border-top: 3px solid darkorange;
+    justify-content: space-around;
+	align-content: end;
+	align-items: center;
+}
+
+.footer-overskrift{
+	font-size: 20px;
+	color: rgb(21, 39, 114);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.footer-item {
+	padding: 2px;
+    font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-row{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.links{
+	color: rgb(21, 39, 114);
+	text-decoration: none;
+	color: inherit;
+}
+
+#fb_ikon{
+	max-width: 20%;
+	margin-left: -65%;
+}
+
+#ig_ikon{
+	max-width: 20%;
+	margin-right: -65%;
+}
